@@ -12,11 +12,13 @@ public  class Variables{
 
 		double z = 23.4d; 
 
-		float a = 2345.23;
+		float a = 2345;
+
+		String name = "Daniel" ;
 
 		
 
 
-		System.out.println(a);
+		System.out.println("Hello, " + name);
 	}
 }
