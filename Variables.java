@@ -17,18 +17,6 @@ public  class Variables{
 		} else {
 			System.out.println("Hot");
 		}
-
-		
-
-
 		System.out.println(y);
-
 	}
-
-
-
-
-
-
-
 }
