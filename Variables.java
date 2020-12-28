@@ -8,15 +8,15 @@ public  class Variables{
 
 		int x =	-400;
 
-		int y = x + 456; 
-	
+		long y = 200L;  // literal long
+
+		double z = 23.4d; 
+
+		float a = 2345.23;
+
+		
 
 
-		if(y < 100) {
-			System.out.println("Cold");
-		} else {
-			System.out.println("Hot");
-		}
-		System.out.println(y);
+		System.out.println(a);
 	}
 }
