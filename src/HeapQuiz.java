@@ -6,7 +6,7 @@ class HeapQuiz {
 		while (x < 3) {
 			hq[x] = new HeapQuiz();
 			hq[x].id = x;
-			x = x + 1;
+			x++;
 		}
 		hq[3] = hq[1];
 		hq[4] = hq[1];
