@@ -1,8 +1,11 @@
 class GoodDog {
 
 	private int size;
-		double tailLength;
-		
+	
+       	GoodDog() {
+                size = 0; 
+	 }
+	
 	public int getSize() {
 		return size;
 	}
@@ -28,10 +31,5 @@ class GoodDog {
 		size = x + y + z;
 	}
 
-	 GoodDog() {
-                size = 0; 
-	
-	 
-	 }
 	
 }

@@ -19,7 +19,6 @@ class GoodDogTestDrive {
 
 		System.out.println("Dog three get: " + three.getSize());
 		three.tailLength = 355.22; // public variable (accessed from GoodDog)
-		System.out.println("Public variable decimal " + (three.tailLength + 25.76));
 		three.bark();
 
 			
