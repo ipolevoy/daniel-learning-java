@@ -47,7 +47,7 @@ class ArrayLoop {
 		}
 		// prints array elements
 		for(x = 0; x < intArray.length; x++) {
-		System.out.print(intArray[x]+ " ");
+			System.out.print(intArray[x] + " ");
 		}
 		
 		System.out.println(intArray);
