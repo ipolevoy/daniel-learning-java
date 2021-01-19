@@ -1,3 +1,5 @@
+package daniel_files;
+
 class Animal{
 
     private String sound; 

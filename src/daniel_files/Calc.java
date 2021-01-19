@@ -1,3 +1,5 @@
+package daniel_files;
+
 public class Calc {
 	public static void main (String args[]) {
 	

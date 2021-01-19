@@ -1,4 +1,6 @@
-class Books { 
+package daniel_files;
+
+class Books {
 	String title;
 	String author;
   }

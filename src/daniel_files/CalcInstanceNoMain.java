@@ -1,3 +1,5 @@
+package daniel_files;
+
 public class CalcInstanceNoMain {
 	
 	int a = 2;
