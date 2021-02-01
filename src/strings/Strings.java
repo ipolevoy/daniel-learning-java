@@ -5,20 +5,20 @@ class Strings {
     public static void main(String[] args) {
 
         //step 1
-        String str = "daniel";
-        String str1 = " and Michael";
+        String str = "daniel"; //Assigns String "daniel" to object str
+        String str1 = " and Michael"; // Assigns string " and Michael" to object str1
 
         //step 2
-        str = str + str1;
-        System.out.println(str);
+        str = str + str1; //Assigns str + str1 to str, initial str value gets lost in string pool
+        System.out.println(str); //prints new str value
 
 
-        String a = "a";
-        String b = "b";
-        String c = "c";
-        String d = "d";
+        String a = "a"; //assigns string "a" to object a
+        String b = "b"; //assigns string "b" to object b
+        String c = "c"; //assigns string "c" to object c
+        String d = "d"; //assigns string "d" to object d
 
-        String result = ((a + b) + c) + d;
+        String result = ((a + b) + c) + d; //Shows how values are usually concatenated
         /*
 
         Concatenating strings with a plus operator creates tem objects that take some resources
