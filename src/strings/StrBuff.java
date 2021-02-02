@@ -1,3 +1,5 @@
+package strings;
+
 class StrBuff {
 
 	public static void main(String[] args) {

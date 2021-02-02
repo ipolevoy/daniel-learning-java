@@ -1,0 +1,5 @@
+1.  Re-read the https://www.tutorialspoint.com/java/java_files_io.htm
+    section and compile questions in this file
+2. Experiment with src/SocketExample.java and process results using
+    regular expressions to find if the response from Google and Yahoo have the word "lucky".
+

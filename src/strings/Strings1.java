@@ -1,22 +1,22 @@
 package strings;
 
-class Strings {
+class Strings1 {
 
     public static void main(String[] args) {
 
         //step 1
-        String str = "daniel"; //Assigns String "daniel" to object str
-        String str1 = " and Michael"; // Assigns string " and Michael" to object str1
+        String str = "daniel"; //Assigns String "daniel" to reference str
+        String str1 = " and Michael"; // Assigns string " and Michael" to reference str1
 
         //step 2
         str = str + str1; //Assigns str + str1 to str, initial str value gets lost in string pool
         System.out.println(str); //prints new str value
 
 
-        String a = "a"; //assigns string "a" to object a
-        String b = "b"; //assigns string "b" to object b
-        String c = "c"; //assigns string "c" to object c
-        String d = "d"; //assigns string "d" to object d
+        String a = "a"; //assigns string "a" to reference a
+        String c = "c"; //assigns string "c" to reference c
+        String b = "b"; //assigns string "b" to reference b
+        String d = "d"; //assigns string "d" to reference d
 
         String result = ((a + b) + c) + d; //Shows how values are usually concatenated
         /*
