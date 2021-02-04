@@ -5,14 +5,14 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.util.regex.*;
 
-public class SocketExample {
+public class SocketExample2{
 
     public static void main(String[] args) throws IOException {
 	StringBuffer sb = new StringBuffer();
 	
 
 
-	Socket s = new Socket("www.google.com", 80);
+	Socket s = new Socket("www.yahoo.com", 80);
         OutputStream out = s.getOutputStream();
         out.write("GET\n\n".getBytes(StandardCharsets.UTF_8));
         InputStream in  = s.getInputStream();
@@ -24,10 +24,10 @@ public class SocketExample {
         }
         s.close();
 	
-	Pattern ptrn = Pattern.compile("lucky", Pattern.CASE_INSENSITIVE);
-        Matcher mtcr = ptrn.matcher(sb);
+	Pattern pattern = Pattern.compile("lucky", Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(sb);
 	
-	boolean matchFound = mtcr.find();
+	boolean matchFound = matcher.find();
 	if(matchFound) {
 		System.out.println("Match found");
 	} 
