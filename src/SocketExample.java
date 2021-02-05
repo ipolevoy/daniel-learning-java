@@ -7,33 +7,27 @@ import java.util.regex.*;
 
 public class SocketExample {
 
+
     public static void main(String[] args) throws IOException {
-	StringBuffer sb = new StringBuffer();
-	
+        System.out.println("Yahoo:" + checkWord("www.yahoo.com", "yahoo"));
+        System.out.println("Google:" + checkWord("www.google.com", "lucky"));
+    }
 
-
-	Socket s = new Socket("www.google.com", 80);
+    private  static boolean checkWord(String domain, String word) throws IOException {
+        StringBuffer sb = new StringBuffer();
+        Socket s = new Socket(domain, 80);
         OutputStream out = s.getOutputStream();
         out.write("GET\n\n".getBytes(StandardCharsets.UTF_8));
         InputStream in  = s.getInputStream();
         int x = in.read();
         while (x != -1){
-            //System.out.print((char) x);
             x = in.read();
-	    sb.append((char) x);
+            sb.append((char) x);
         }
         s.close();
-	
-	Pattern ptrn = Pattern.compile("lucky", Pattern.CASE_INSENSITIVE);
-        Matcher mtcr = ptrn.matcher(sb);
-	
-	boolean matchFound = mtcr.find();
-	if(matchFound) {
-		System.out.println("Match found");
-	} 
-	else {
-		System.out.println("Match not found");
-	}	
-//	System.out.println(sb.toString());
+        Pattern pattern = Pattern.compile(word, Pattern.CASE_INSENSITIVE);
+        Matcher matcher = pattern.matcher(sb);
+        return matcher.find();
     }
 }
+
