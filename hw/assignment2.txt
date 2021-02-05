@@ -1,0 +1,7 @@
+Modify the program  StdInput to do this:
+
+1. Prompt  for first name
+2. Prompt for last name
+3. Print: "Your name is: " ...
+4. Quit
+
