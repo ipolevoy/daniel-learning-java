@@ -9,8 +9,6 @@ public class SocketExample {
 
     public static void main(String[] args) throws IOException {
 	StringBuffer sb = new StringBuffer();
-	
-
 
 	Socket s = new Socket("www.google.com", 80);
         OutputStream out = s.getOutputStream();
@@ -26,12 +24,13 @@ public class SocketExample {
 	
 	Pattern ptrn = Pattern.compile("lucky", Pattern.CASE_INSENSITIVE);
         Matcher mtcr = ptrn.matcher(sb);
-	
+
+	boolean myLook = mtcr.lookingAt();
+		System.out.print(myLook + "\n");	
 	boolean matchFound = mtcr.find();
 	if(matchFound) {
 		System.out.println("Match found");
-	} 
-	else {
+	} else {
 		System.out.println("Match not found");
 	}	
 //	System.out.println(sb.toString());
