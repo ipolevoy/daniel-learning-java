@@ -5,7 +5,7 @@ import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 import java.util.regex.*;
 
-public class SocketExample {
+public class SocketExampleNew {
 
     public static void main(String[] args) throws IOException {
 	StringBuffer sb = new StringBuffer();
