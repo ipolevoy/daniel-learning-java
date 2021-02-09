@@ -2,7 +2,7 @@
 
 import java.io.IOException;
 
-public class StdInput {
+public class StdInput2 {
 
     public static void main(String[] args) throws IOException {
 	
@@ -32,14 +32,11 @@ public class StdInput {
 		System.out.println(sb.toString().toUpperCase());
 //		System.out.println(sb.replace(3,7, "wdad"));
 		System.out.println(sb.insert(4, "jay"));
-	//x = System.in.read();
-       // System.out.println("you typed " + (char) x);
 
-/*	for(int i = 0; (char) System.in.read() != 'A'; i++){
-
-		System.out.print((char) i);
-	}
-*/		
-//		System.out.print(sb);
+		StringBuffer js = new StringBuffer("hello this is my string");	
+		MyStringUtil ref = new MyStringUtil();
+		ref.printString(js);
+		ref.stringReverse(js);		
+		ref.subStr(2,js);
 	}
 }
