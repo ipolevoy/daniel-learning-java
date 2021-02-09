@@ -1,0 +1,25 @@
+1. Create usable Bash scripts to compile  and execute Java programs (Bash scripts with executable flags)
+    Place these into a new directory called
+    bin/compile.sh
+    bin/exec.sh
+
+    The bin/compile.sh should not take any arguments and will just compile everything  under src
+    The bin/exec.sh needs to take one argument that  is a fully qualified class name.
+
+2. Write an interactive Calculator program, that:
+
+    a. Prompts for an operation, such as: add, subtract, divide and multiply.
+    b. Once the operation is selected, prompt for a first operand
+    c. Prompt for a second operand
+    d. Produce and print a result in this format:
+
+         The result is:  23 + 3 = 26
+
+    e. Ask if user wants more calculations.  If yes, go to step (a.) if not, quit and say "good bye".
+    f. Store every operation in a form of a text file called "calculator.log" in the directory "classes", such  that the file would read:
+        2 + 4 = 6
+        2 * 2 = 4
+        ...
+
+
+
