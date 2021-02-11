@@ -1,8 +1,8 @@
 package stdio;
 
-import java.io.IOException;
+import java.util.*;
 
-public class StdInput {
+public class Calculator  {
 
     public static void main(String[] args) throws IOException {
 
