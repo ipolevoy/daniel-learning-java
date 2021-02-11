@@ -1,4 +1,4 @@
-package daniel_files;
+package stdio;
 
 public class CalcInstanceNoMain {
 	
