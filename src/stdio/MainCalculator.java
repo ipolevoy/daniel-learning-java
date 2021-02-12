@@ -1,5 +1,6 @@
+package stdio;
+
 import java.util.Scanner;
-//import com.mypackages.CalcMethodsPkg;
 
 public class MainCalculator {
 	
