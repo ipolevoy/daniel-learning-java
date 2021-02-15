@@ -1,4 +1,4 @@
-//package stdio;
+package stdio;
 
 
 import java.lang.Math;
@@ -22,8 +22,11 @@ public class TheCalculator {
                 System.out.print("Type of operation: ");
 
                 operand = scanner.nextLine();
-                if ((operand.length() < 2) & ((operand.contains("+")) || (operand.contains("-")) ||(operand.contains("*")) || (operand.contains("/")))) {
-                 } else {
+                if (!((operand.length() < 2)
+                        & ((operand.contains("+"))
+                            || (operand.contains("-"))
+                            ||(operand.contains("*"))
+                            || (operand.contains("/"))))) {
                     System.out.println("Incorrect input type");
                     j--;
                 }
