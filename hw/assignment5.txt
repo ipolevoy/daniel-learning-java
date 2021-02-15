@@ -1,0 +1,14 @@
+-1. Configure VI to type 4 spaces when a tab is typed
+
+0. Buy a Linux book!!!
+    Study Bash.
+
+1. Create usable Bash scripts to compile  and execute Java programs (Bash scripts with executable flags)
+
+    bin/exec.sh
+    The bin/exec.sh needs to take one argument that  is a fully qualified class name.
+
+2. Improve an interactive Calculator program, that:
+
+    a. Change FOR loops for While where appropriate and no loop index hacking
+    b. Responds to bad input with humor (not offending).
