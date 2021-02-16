@@ -12,3 +12,8 @@
 
     a. Change FOR loops for While where appropriate and no loop index hacking
     b. Responds to bad input with humor (not offending).
+
+3. Read PACKAGES section from tutorial
+
+    and compile a list of questions
+
