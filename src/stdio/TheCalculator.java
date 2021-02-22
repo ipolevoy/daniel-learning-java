@@ -14,10 +14,13 @@ public class TheCalculator {
         Scanner scanner = new Scanner(System.in);
         String operand = "";
      
-       int i = 0;
+        int i = 0;
+        int j = 0;
+        int h = 0;
+        int g = 0;
     
         while (i == 0) {
-            for (int j = 0; j < 1; j++) {
+            while (j == 0) {
                 System.out.println("List of possible operations: +, -, *, /");
                 System.out.print("Type of operation: ");
 
@@ -28,7 +31,7 @@ public class TheCalculator {
                             ||(operand.contains("*"))
                             || (operand.contains("/"))))) {
                     System.out.println("Incorrect input type");
-                    j--;
+                    j++;
                 }
             }
 
@@ -36,24 +39,24 @@ public class TheCalculator {
             double x = 0;
             double y = 0;
     
-            for (int g = 0; g < 1; g++) {
+           while (g == 0) {
                 try {
                     x = Double.parseDouble(scanner.nextLine());
                 }
                 catch(Exception e) {
-                    g--;
+                    g++;
                     System.out.println("Oops! Input a number please!");
                 }
             }
 
             System.out.print("Print second value: ");
 
-            for (int h = 0; h < 1; h++) {
+            while (h == 0) {
                 try {
                     y = Double.parseDouble(scanner.nextLine());
                 }
                 catch(Exception e) {
-                    h--;
+                    h++;
                     System.out.println("Oops! Input a number please!");
                 }
 
