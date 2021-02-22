@@ -1,2 +1,3 @@
 #!/bin/bash
-java $1
+java -cp classes $1
+
