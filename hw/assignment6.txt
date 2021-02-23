@@ -1,0 +1,94 @@
+
+Refactor the code below to have each loop in a separate meaningful method like in the example below.
+
+* Remove all loop switches (use breaks)
+* Every loop needs to be  inside a separate method that is named sensibly
+* No loops in the Main method
+
+
+package stdio;
+
+
+import java.lang.Math;
+import java.util.Scanner;
+
+public class TheCalculator {
+
+    private static final String OPERATORS = "+-/*";
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String args[]) {
+
+        System.out.println("Welcome to the Java Calculator!" + '\n');
+
+        String operand = "";
+
+
+        int h = 0;
+        int g = 0;
+
+        while (true) {
+             String operator = getOperator();
+
+            System.out.print("Print first value: ");
+            double x = 0;
+            double y = 0;
+
+           while (g == 0) {
+                try {
+                    x = Double.parseDouble(scanner.nextLine());
+                }
+                catch(Exception e) {
+                    g++;
+                    System.out.println("Oops! Input a number please!");
+                }
+            }
+
+            System.out.print("Print second value: ");
+
+            while (h == 0) {
+                try {
+                    y = Double.parseDouble(scanner.nextLine());
+                }
+                catch(Exception e) {
+                    h++;
+                    System.out.println("Oops! Input a number please!");
+                }
+
+            }
+
+            if (operand.indexOf("*") == 0) {
+                System.out.print("The result is: " + x + " * " + y + " = " + (x * y));
+            } else if (operand.indexOf("/") == 0) {
+                System.out.print("The result is: " + x + " / " + y + " = " + (x / y));
+            } else if (operand.indexOf("+") == 0) {
+                System.out.print("The result is: " + x + " + " + y + " = " + (x + y));
+            } else if (operand.indexOf("-") == 0) {
+                System.out.print("The result is: " + x + " - " + y + " = " + (Math.round((x - y))));
+            }
+
+            System.out.print('\n');
+            System.out.print("Do you want to do another calculation? (Enter Y or N): ");
+            String boo = scanner.nextLine();
+            if (boo.indexOf("N") == 0) {
+                break;
+            }
+        }
+    }
+
+    private static String getOperator() {
+        String operator;
+        while (true) {
+            System.out.println("List of possible operations: +, -, *, /");
+            System.out.print("Type of operation: ");
+
+            operator = scanner.nextLine();
+            if (OPERATORS.contains(operator)) {
+                break;
+            }else {
+                System.out.println("Incorrect input type");
+            }
+        }
+        return operator;
+    }
+}
