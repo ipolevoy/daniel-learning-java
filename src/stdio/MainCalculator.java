@@ -25,7 +25,7 @@ public class MainCalculator {
 			
 			CalcMethods cm = new CalcMethods();
 		
-			if (operand.indexOf("M") == 0) {
+/*			if (operand.indexOf("M") == 0) {
 				result = cm.multiply(x,y);
 				//System.out.print("The result is: " + x + " * " + y + " = " + (x*y));
 			} else if (operand.indexOf("D") == 0) {
@@ -37,7 +37,7 @@ public class MainCalculator {
 			} else if (operand.indexOf("S") == 0) {
 				result = cm.subtract(x,y);
 				//System.out.print("The result is: " + x + " - " + y + " = " + (x-y));
-			}
+			} */
 			System.out.println('\n' + result);
 			System.out.print("Do you want to do another calculation? ");
 			String boo = scanner.nextLine();
