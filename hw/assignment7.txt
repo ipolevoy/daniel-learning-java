@@ -5,6 +5,6 @@
 
 
 
-Re-explanation on polymorphism
-Why do we use encapsulation?
-How do you call methods with the same name in different classes? (overriding)
+* Re-explanation on polymorphism
+* Why do we use encapsulation?
+* How do you call methods with the same name in different classes? (overriding)
