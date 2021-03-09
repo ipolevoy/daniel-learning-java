@@ -1,4 +1,4 @@
-# ** Daniel Java Learning Repository **
+# **Daniel Java Learning Repository**
 ## This is the sub heading
 This is a  place for Daniel's  learning Java 
 - In this repository, we cover a variety of projects    
@@ -9,3 +9,8 @@ This is a  place for Daniel's  learning Java
 
 > Blockquote text
 tada...
+
+
+|**heading 1**|**heading 2**| **heading 3**|
+|---|---|---|
+|one|two| three |
