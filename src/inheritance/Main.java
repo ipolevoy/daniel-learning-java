@@ -5,18 +5,27 @@ public class Main {
     public static void main(String[] args){
 
 
-        Animal[] animals = new Animal[2];
-
+        Animal[] animals = new Animal[3];
         animals[0] =  new Dog("Sparky");
         animals[1] =  new Cat("Oliver");
-
-
-        for(int i = 0; i < animals.length; i++){
-            System.out.println(animals[i].getName() + ":");
-            animals[i].makeSound();
-
-        }
-
+        animals[2] =  new Herring("Fish 1");
+        printAnimals(animals);
+        makeOffspring(animals);
     }
 
+    private static void makeOffspring(Animal[] animals) {
+
+        for (Animal animal : animals) {
+            Animal[]  offspring = animal.makeOffspring();
+            System.out.println(animal.getName() + " made " + offspring.length + " children");
+        }
+    }
+
+    public static void printAnimals(Animal[] animals){
+
+        for (Animal animal : animals) {
+            System.out.print(animal.getName() + ": ");
+            animal.makeSound();
+        }
+    }
 }

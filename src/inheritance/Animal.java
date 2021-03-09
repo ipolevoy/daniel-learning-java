@@ -10,6 +10,8 @@ public abstract class Animal{
 
 	public abstract void makeSound();
 
+	public abstract Animal[] makeOffspring();
+
 	public String getName() {
 		return name;
 	}
