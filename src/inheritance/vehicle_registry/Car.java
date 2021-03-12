@@ -15,4 +15,8 @@ public abstract class Car extends Vehicle{
     @Override
     public abstract void stop();
 
+
+    public RegistrationInfo getRegistrationInfo() {
+        return new RegistrationInfo(getOwnerName(), getAddress());
+    }
 }

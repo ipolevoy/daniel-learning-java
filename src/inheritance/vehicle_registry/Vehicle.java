@@ -1,6 +1,6 @@
 package inheritance.vehicle_registry;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements Registerable{
 
     private String ownerName, address;
 
@@ -19,7 +19,7 @@ public abstract class Vehicle {
         return ownerName;
     }
 
-    String getAddress(){
+    public String getAddress(){
         return address;
     }
 

@@ -13,5 +13,10 @@ public abstract class Cycle extends Vehicle {
     public void decelerate(int rate) {}
 
     @Override
-    void stop(); 
+    public abstract void stop();
+
+    @java.lang.Override
+    public RegistrationInfo getRegistrationInfo() {
+        return new RegistrationInfo(getOwnerName(), getAddress());
+    }
 }

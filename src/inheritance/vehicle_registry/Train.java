@@ -14,4 +14,9 @@ public class Train extends Vehicle{
 
     @Override
     public void stop() {}
+
+    @java.lang.Override
+    public RegistrationInfo getRegistrationInfo() {
+        return new RegistrationInfo(getOwnerName(), getAddress());
+    }
 }
