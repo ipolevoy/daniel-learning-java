@@ -7,7 +7,9 @@ public abstract class Car extends Vehicle{
     }
 
     @Override
-    public void accelerate(int rate) {}
+    public void accelerate(int rate) {
+		System.out.println("Accelerating...");
+	} 
 
     @Override
     public void decelerate(int rate) {}

@@ -9,7 +9,7 @@ public abstract class Vehicle implements Registerable{
         this.address = address;
     }
 
-    public abstract void accelerate(int rate);
+    public abstract void accelerate(int rate) throws RuntimeException;
     public abstract void decelerate(int rate);
     public abstract void stop();
 

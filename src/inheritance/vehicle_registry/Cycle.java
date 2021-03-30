@@ -7,7 +7,9 @@ public abstract class Cycle extends Vehicle {
     }
 
     @Override
-    public void accelerate(int rate) {}
+    public void accelerate(int rate) throws RuntimeException{}
+ 
+		
 
     @Override
     public void decelerate(int rate) {}
