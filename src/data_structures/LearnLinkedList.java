@@ -27,9 +27,9 @@ public class LearnLinkedList {
 		LinkedList<String> l = new LinkedList<String>();
 
 		
-		l.add("Apple");
+		l.add("Zebra");
 		l.add("Bass");
-		l.add("Cat");
+		l.add("rain");
 		System.out.println(ll.containsAll(l)); 
 		ll.remove("Dare");
 		System.out.println(ll);
@@ -52,8 +52,11 @@ public class LearnLinkedList {
 		System.out.println(j);
 //		this.ii.add(11);
 //		this.ii.add(12);
-
+		
 		ref.takeListPar(l);
+		Collections.sort(l);
+		l.forEach(System.out::println);
+
 	}
 
 
