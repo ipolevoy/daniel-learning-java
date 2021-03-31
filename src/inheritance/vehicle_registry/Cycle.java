@@ -6,16 +6,6 @@ public abstract class Cycle extends Vehicle {
         super(ownerName, address);
     }
 
-    @Override
-    public void accelerate(int rate) throws RuntimeException{}
- 
-		
-
-    @Override
-    public void decelerate(int rate) {}
-
-    @Override
-    public abstract void stop();
 
     @java.lang.Override
     public RegistrationInfo getRegistrationInfo() {

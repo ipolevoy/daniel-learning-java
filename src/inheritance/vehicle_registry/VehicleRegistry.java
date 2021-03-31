@@ -17,4 +17,14 @@ public class VehicleRegistry {
         }
     }
 
+    public void accelerate(int rate){
+        for (Vehicle vehicle : vehicles) {
+
+            try{
+                vehicle.accelerate(rate);
+            }catch(Exception e){
+                System.err.println(vehicle.getClass().getName() + " cannot accelerate at the rate of: " + rate);
+            }
+        }
+    }
 }

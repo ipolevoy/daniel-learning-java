@@ -9,7 +9,12 @@ public abstract class Vehicle implements Registerable{
         this.address = address;
     }
 
-    public abstract void accelerate(int rate) throws RuntimeException;
+
+
+    public void accelerate(int rate) {
+        System.out.println(getClass().getName() + " accelerating with rate: " + rate);
+    }
+
     public abstract void decelerate(int rate);
     public abstract void stop();
 

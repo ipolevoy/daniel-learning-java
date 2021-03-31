@@ -1,13 +1,23 @@
 package inheritance.vehicle_registry;
 
-public class Unicycle extends Cycle{
+public class Unicycle extends Cycle {
     public Unicycle(String ownerName, String address) {
-      super(ownerName, address);
+        super(ownerName, address);
     }
+
     @Override
-    public void accelerate(int rate){
-        throw new RuntimeException("Can not accelerate");
+    public void accelerate(int rate) {
+        if (rate > 3) {
+            throw new RuntimeException("Can not accelerate");
         }
+        super.accelerate(rate);
+    }
+
     @Override
-    public void stop() {}
+    public void decelerate(int rate) {
+    }
+
+    @Override
+    public void stop() {
+    }
 }

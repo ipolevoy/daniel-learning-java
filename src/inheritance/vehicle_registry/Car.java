@@ -6,10 +6,6 @@ public abstract class Car extends Vehicle{
         super(ownerName, address);
     }
 
-    @Override
-    public void accelerate(int rate) {
-		System.out.println("Accelerating...");
-	} 
 
     @Override
     public void decelerate(int rate) {}
