@@ -10,20 +10,17 @@ public class VehicleRegistry {
     public void register(Vehicle vehicle){
         vehicles.add(vehicle);
     }
-
     public void list(){
         for (Vehicle vehicle : vehicles) {
             System.out.println(vehicle);
         }
     }
-
-    public void accelerate(int rate){
-        for (Vehicle vehicle : vehicles) {
-
-            try{
-                vehicle.accelerate(rate);
-            }catch(Exception e){
-                System.err.println(vehicle.getClass().getName() + " cannot accelerate at the rate of: " + rate);
+	public void accelerate(int rate) {
+         for (Vehicle vehicle : vehicles) {
+              try {
+                  vehicle.accelerate(rate);
+              } catch(Exception e) {
+                  System.err.println(vehicle.getClass().getName() + " can't accelerate at the rate of: " + rate);
             }
         }
     }

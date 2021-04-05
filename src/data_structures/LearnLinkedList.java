@@ -5,10 +5,12 @@ public class LearnLinkedList {
 
 	LinkedList<Integer> i = new LinkedList<Integer>();
 	static LinkedList<Integer> ii = new LinkedList<Integer>();
+	HashMap<String, Integer> gg = new HashMap<String, Integer>();
 
 	public static void main (String args[]) {
 		LinkedList<String> ll = new LinkedList<String>();
-		
+		LearnLinkedList rr = new LearnLinkedList();
+	
 		ll.add("Apple");
 		boolean b = ll.add("Bass");
 		ll.add("Cat");
@@ -21,8 +23,16 @@ public class LearnLinkedList {
 		System.out.println(bb);
 		System.out.println(ll);
 		System.out.println(b);
-	
+
+	rr.gg.put("Jim", 12);	
 			
+
+		for(int i = 0; i < ll.size(); i++) {
+			System.out.println("This loop: " + ll.get(i));
+			rr.gg.put(ll.get(i), i + 100);
+		}
+
+	System.out.println(rr.gg);
 
 		LinkedList<String> l = new LinkedList<String>();
 

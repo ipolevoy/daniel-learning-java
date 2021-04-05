@@ -11,6 +11,8 @@ public class LearnHashMap {
 	
 		HashMap<String, Integer> averageAge = new HashMap<String, Integer>();
 		
+		HashMap<Integer, String> averageShoeSize = new HashMap<Integer,String>();
+
 		averageAge.put("Russia", 34);
 		averageAge.put("USA", 27);
 		averageAge.put("Finland", 12);
@@ -32,9 +34,19 @@ public class LearnHashMap {
 		System.out.println(averageAge.size());
 	//  System.out.println(averageAge.remove("Finland"));
 		System.out.println(averageAge.values());
-		System.out.println(averageAge);
+		System.out.println("HERE: " + averageAge);
 		
+		for(Map.Entry<String, Integer> ent : averageAge.entrySet()) {
+			System.out.println("Key = " + ent.getKey() + ", Value = " + ent.getValue());
+			averageShoeSize.put(ent.getValue(), ent.getKey() + " Europe");
+			averageShoeSize.put(ent.getValue() + 75, ent.getKey() + " Asia");
+		}
+		System.out.println(averageShoeSize);
 			
+	
+
+
+	
 		ref.hmap2(ref); 
 
 
