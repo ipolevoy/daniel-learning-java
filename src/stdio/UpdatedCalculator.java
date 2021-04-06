@@ -14,8 +14,9 @@ public class UpdatedCalculator {
     private static final CalcMethods CM = new CalcMethods();
 
     public static void main(String args[]) {
+
         System.out.println("Welcome to the Java Calculator!" + '\n');
-        doWork();
+		doWork();
     }
 
     private static void doWork(){
@@ -34,21 +35,23 @@ public class UpdatedCalculator {
         }
     }
 
-    private static double calculate(String operator, double valFirst, double valSecond){
-        if (operator.indexOf(MULT) == 0) {
+    private static double calculate(String operator, double valFirst, double valSecond) throws ZeroException {
+	    if (operator.indexOf(MULT) == 0) {
             return CM.multiply(valFirst, valSecond);
+		} else if ((operator.indexOf(DIVIDE) == 0) && (valSecond == 0)) {
+			throw new ZeroException("You can't divide by 0!");
         } else if (operator.indexOf(DIVIDE) == 0) {
             return CM.divide(valFirst, valSecond);
         } else if (operator.indexOf(PLUS) == 0) {
             return CM.add(valFirst, valSecond);
         } else if (operator.indexOf(MINUS) == 0) {
             return CM.subtract(valFirst, valSecond);
-        }else {
+        } else {
             throw new RuntimeException("Bad operator");
         }
     }
 
-    private static String getOperator() {
+    private static String getOperator() throws WrongTypeException{
         String operator;
         while (true) {
             System.out.println("List of possible operations: +, -, *, /");
@@ -58,7 +61,7 @@ public class UpdatedCalculator {
             if (OPERATORS.contains(operator)) {
                 break;
             } else {
-                System.out.println("Incorrect input type");
+                throw new WrongTypeException("Incorrect input type");
             }
         }
         return operator;
