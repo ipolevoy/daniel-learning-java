@@ -1,6 +1,6 @@
 package stdio;
 
-public class ZeroException extends ArithmeticException {
+public class ZeroException extends RuntimeException {
 	public ZeroException(String message) {
 		super(message);
 	}
