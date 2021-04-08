@@ -5,11 +5,13 @@ import java.util.Scanner;
 
 public class UpdatedCalculator {
 
-    private static final String OPERATORS = "+-/*";
     private static final String PLUS = "+";
     private static final String MINUS = "-";
     private static final String MULT = "*";
     private static final String DIVIDE = "/";
+
+    private static final String OPERATORS = PLUS + MINUS + MULT + DIVIDE;
+
     private static final Scanner scanner = new Scanner(System.in);
     private static final CalcMethods CM = new CalcMethods();
 
@@ -41,7 +43,7 @@ public class UpdatedCalculator {
 		} else if ((operator.indexOf(DIVIDE) == 0) && (valSecond == 0)) {
 			throw new ZeroException("You can't divide by 0!");
         } else if (operator.indexOf(DIVIDE) == 0) {
-            return CM.divide(valFirst, valSecond);
+            return CM.divide((float) valFirst, (float) valSecond);
         } else if (operator.indexOf(PLUS) == 0) {
             return CM.add(valFirst, valSecond);
         } else if (operator.indexOf(MINUS) == 0) {

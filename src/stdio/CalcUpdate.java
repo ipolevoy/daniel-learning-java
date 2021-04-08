@@ -40,7 +40,7 @@ public class CalcUpdate {
             return CM.multiply(valFirst, valSecond);
 		} else if ((operator.indexOf(DIVIDE) == 0)) {
 			try {
-				return CM.divide(valFirst, valSecond);
+				return CM.divide((float) valFirst, (float) valSecond);
 			} catch (Exception e) {
 			    throw new ZeroException("Can't divide by zero!"); 
 			}
