@@ -8,7 +8,7 @@ public class FooMainHello {
 
         try{
             Foo.doSomething(0);
-        }catch(ArithmeticException  e){
+        }catch(ArithmeticException e){
             //ignore
         }
 

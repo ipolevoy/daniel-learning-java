@@ -3,7 +3,7 @@ package stdio;
 
 import java.util.Scanner;
 
-public class UpdatedCalculator {
+public class CalcUpdate {
 
     private static final String OPERATORS = "+-/*";
     private static final String PLUS = "+";
@@ -38,10 +38,12 @@ public class UpdatedCalculator {
     private static double calculate(String operator, double valFirst, double valSecond) throws ZeroException {
 	    if (operator.indexOf(MULT) == 0) {
             return CM.multiply(valFirst, valSecond);
-		} else if ((operator.indexOf(DIVIDE) == 0) && (valSecond == 0)) {
-			throw new ZeroException("You can't divide by 0!");
-        } else if (operator.indexOf(DIVIDE) == 0) {
-            return CM.divide(valFirst, valSecond);
+		} else if ((operator.indexOf(DIVIDE) == 0)) {
+			try {
+				return CM.divide(valFirst, valSecond);
+			} catch (Exception e) {
+			    throw new ZeroException("Can't divide by zero!"); 
+			}
         } else if (operator.indexOf(PLUS) == 0) {
             return CM.add(valFirst, valSecond);
         } else if (operator.indexOf(MINUS) == 0) {
