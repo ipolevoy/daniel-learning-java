@@ -1,0 +1,6 @@
+China:1300000
+USA:300000
+Russia:120000
+Germany:150000
+Norway:70000
+Iceland:20000

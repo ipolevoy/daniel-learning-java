@@ -34,7 +34,7 @@ public class LearnHashMap {
 		System.out.println(averageAge.size());
 	//  System.out.println(averageAge.remove("Finland"));
 		System.out.println(averageAge.values());
-		System.out.println("HERE: " + averageAge);
+		System.out.println(averageAge);
 		
 		for(Map.Entry<String, Integer> ent : averageAge.entrySet()) {
 			System.out.println("Key = " + ent.getKey() + ", Value = " + ent.getValue());

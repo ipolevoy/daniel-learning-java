@@ -1,0 +1,5 @@
+China:1200
+USA:12000
+Russia:800
+Norway:650
+Belgium:650
