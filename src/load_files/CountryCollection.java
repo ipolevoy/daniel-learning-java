@@ -1,3 +1,5 @@
+package load_files;
+
 import java.util.*;
 import java.io.*;
 
@@ -5,11 +7,11 @@ public class CountryCollection {
 
 
 	public int populateGDP(Country obj) throws IOException {
- 		File myfile2 = new File("./CountriesGDP.txt");
+ 		File myfile2 = new File("./src/load_files/CountriesGDP.txt");
         BufferedReader br2 = new BufferedReader(new FileReader(myfile2));
 		
 	//	CountryCollection coll = new CountryCollection();
-		int count = 1; 
+
         String line2 = null;
         String [] parts;
 
@@ -50,12 +52,12 @@ public class CountryCollection {
 	}
 
 	public int populatePop(Country obj) throws IOException {
-		File myfile3 = new File("./CountriesPopulation.txt");
+		File myfile3 = new File("./src/load_files/CountriesPopulation.txt");
 		BufferedReader br3 = new BufferedReader(new FileReader(myfile3));
 		
-		String population = null;	
+		String population;
 		int totalPop = 0;
-		String line3 = null;
+		String line3;
 		int recordCount = 1;
 		while ((line3 = br3.readLine()) != null) {
 			if (recordCount <= 2) {
@@ -98,11 +100,11 @@ public class CountryCollection {
 
 
 	public void populateEuro(Country obj) throws IOException {
-		String line4 = null;
-		File myfile4 = new File("./CountriesEurope.txt");
+
+		File myfile4 = new File("./src/load_files/CountriesEurope.txt");
         BufferedReader br4 = new BufferedReader(new FileReader(myfile4));
 
-		while((line4 = br4.readLine()) != null) {
+		while((br4.readLine()) != null) {
 			obj.euro.add(br4.readLine().trim());
 		}
 	}
