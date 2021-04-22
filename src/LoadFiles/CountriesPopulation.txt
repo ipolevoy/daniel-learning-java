@@ -1,0 +1,142 @@
+Capital			Country			  Pop			  EOL
+=====================================================
+Bejing          CHINA             1,439,323,776   EOL
+Delhi           INDIA             1,380,004,385   EOL
+Washington      USA               331,002,651     EOL
+Jakarta         INDONESIA         273,523,615     EOL
+Islamabad       PAKISTAN          220,892,340     EOL
+Brazilia        BRAZIL            212,559,417     EOL
+Abuja           NIGERIA           206,139,589     EOL
+Dhaka           BANGLADESH        164,689,383     EOL
+Moscow          RUSSIA            145,934,462     EOL
+Mexico City     MEXICO            128,932,753     EOL
+Tokio           JAPAN             126,476,461     EOL
+Adis Ababa      ETHIOPIA          114,963,588     EOL
+Manila          PHILIPPINES       109,581,078     EOL
+Cairo           EGYPT             102,334,404     EOL
+Hanoi           VIETNAM           97,338,579      EOL
+Kinshasa        CONGO             89,561,403      EOL
+Ankara          TURKEY            84,339,067      EOL
+Tehran          IRAN              83,992,949      EOL
+Berlin          GERMANY           83,783,942      EOL
+Bangkok         THAILAND          69,799,978      EOL
+London          UNITED KINGDOM    67,886,011      EOL
+Paris           FRANCE            65,273,511      EOL
+Rome            ITALY             60,461,826      EOL
+Dodoma          TANZANIA          59,734,218      EOL
+Pretoria        SOUTH AFRICA      59,308,690      EOL
+Naypuitaw       MYANMAR           54,409,800      EOL
+Nairobi         KENIA             53,771,296      EOL
+Seoul           SOUTH KOREA       51,269,185      EOL
+Bogota          COLOMBIA          50,882,891      EOL
+Madrid          SPAIN             46,754,778      EOL
+Kampala         UGANDA            45,741,007      EOL
+Buenos Aires    ARGENTINA         45,195,774      EOL
+Algiers         ALGERIA           43,851,044      EOL
+Khartoum        SUDAN             43,849,260      EOL
+Kiev            UKRAINE           43,733,762      EOL
+Baghdad         IRAQ              40,222,493      EOL
+Kabul           AFGHANISTAN       38,928,346      EOL
+Warsaw          POLAND            37,846,611      EOL
+Ottawa          CANADA            37,742,154      EOL
+Rabat           MOROCCO           36,910,560      EOL
+Riyadh          SAUDI ARABIA      34,813,871      EOL
+Tashkent        UZBEKISTAN        33,469,203      EOL
+Lima            PERU              32,971,854      EOL
+Luanda          ANGOLA            32,866,272      EOL
+Kuala Lumpur    MALAYSIA          32,365,999      EOL
+Maputo          MOZAMBIQUE        31,255,435      EOL
+Accra           GHANA             31,072,940      EOL
+Sanaa           YEMEN             29,825,964      EOL
+Kathmandu       NEPAL             29,136,808      EOL
+Carakas         VENEZUELA         28,435,940      EOL
+Pataliputra     MADAGASKAR        27,691,018      EOL
+Yaounde         CAMEROON          26,545,863      EOL
+Yamoussoukry    COTE DIVOIRE      26,378,274      EOL
+Pyongyang       NORTH KOREA       25,778,816      EOL
+Canberra        AUSTRALIA         25,499,884      EOL
+Abuja           NIGER             24,206,644      EOL
+Taipei          TAIWAN            23,816,775      EOL
+Colombo         SRI LANKA         21,413,249      EOL
+Ouagadougou     BURKINA FASO      20,903,273      EOL
+Bamako          MALI              20,250,833      EOL
+Bucharest       ROMANIA           19,237,691      EOL
+Liongwe         MALAWI            19,129,952      EOL
+Lima            CHILE             19,116,201      EOL
+Nur-Sultan      KAZAKHSTAN        18,776,707      EOL
+Lusaka          ZAMBIA            18,383,955      EOL
+Guatemala City  GUATEMALA         17,915,568      EOL
+Quito           ECUADOR           17,643,054      EOL
+Damask          SYRIA             17,500,658      EOL
+Amsterdam       NETHERLANDS       17,134,872      EOL
+Dakar           SENEGAL           16,743,927      EOL
+Phnom Penh      CAMBODIA          16,718,965      EOL
+NDjamena        CHAD              16,425,864      EOL
+Magadishu       SOMALIA           15,893,222      EOL
+Harare          ZIMBABWE          14,862,924      EOL
+Malabo          GUINEA            13,132,795      EOL
+Kigali          RWANDA            12,952,218      EOL
+Porto-Novo      BENIN             12,123,200      EOL
+Gitega          BURUNDI           11,890,784      EOL
+Tunis           TUNISIA           11,818,619      EOL
+La Paz          BOLIVIA           11,673,021      EOL
+Brussels        BELGIUM           11,589,623      EOL
+Port-au-Prince  HAITI             11,402,528      EOL
+Havana          CUBA              11,326,616      EOL
+Juba            SOUTH SUDAN       11,193,725      EOL
+Santo Domingo   DOMINICAN REPUBLIC10,847,910      EOL
+Prague          CZECH REPUBLIC    10,708,981      EOL
+Athens          GREECE            10,423,054      EOL
+Amman           JORDAN            10,203,134      EOL
+Lisbon          PORTUGAL          10,196,709      EOL
+Baku            AZERBAIJAN        10,139,177      EOL
+Stockholm       SWEDEN            10,099,265      EOL
+Tegucigalpa     HONDURAS          9,904,607       EOL
+Abu Dhabi       UAE               9,890,402       EOL
+Budapest        HUNGARY           9,660,351       EOL
+Dushanbe        THAJIKISTAN       9,537,645       EOL
+Minsk           BELARUS           9,449,323       EOL
+Vienna          AUSTRIA           9,006,398       EOL
+Port Moresbu    PAPUA NEW GUINEA  8,947,024       EOL
+Belgrade        SERBIA            8,737,371       EOL
+Jerusalem       ISRAEL            8,655,535       EOL
+Bern            SWITZERLAND       8,654,622       EOL
+Vientiane       LAOS              7,275,560       EOL
+Asuncion        PARAGUAY          7,132,538       EOL
+Sofia           BULGARIA          6,948,445       EOL
+Beirut          LEBANON           6,825,445       EOL
+Copenhagen      DENMARK           5,792,202       EOL
+Helsinki        FINLAND           5,540,720       EOL
+Bratislava      SLOVAKIA          5,459,642       EOL
+Oslo            NORWAY            5,421,241       EOL
+Muscat          OMAN              5,106,626       EOL
+Dublin          IRELAND           4,937,786       EOL
+Wellington      NEW ZELAND        4,822,233       EOL
+Panama City     PANAMA            4,270,571       EOL
+Kuwait City     KUWAIT            4,270,571       EOL
+Zagreb          CROATIA           4,105,267       EOL
+Chiinau         MOLDOVA           4,033,963       EOL
+Tbilisi         GEORGIA           3,989,167       EOL
+Saraevo         BOSNIA HERZEGOVINA3,301,000       EOL
+Tirana          ALBANIA           2,877,797       EOL
+Vilnus          LITHUANIA         2,722,289       EOL
+Windhoek        NAMIBIA           2,540,905       EOL
+Banjul          GAMBIA            2,416,668       EOL
+Gaborone        BOTSWANA          2,351,627       EOL
+Libreville      GABON             2,225,734       EOL
+Skopje          MACEDONIA         2,083,374       EOL
+Ljubljana       SLOVENIA          2,078,938       EOL
+Riga            LATVIA            1,886,198       EOL
+Tallinn         ESTONIA           1,326,535       EOL
+Nicosia         CYPRUS            1,207,359       EOL
+Podgorica       MONTENEGRO        628,066         EOL
+Luxembourg      LUXEMBOURG        625,978         EOL
+Praia           CABO VERDE        555,987         EOL
+Valetta         MALTA             441,543         EOL
+Nassau          BAHAMAS           393,244         EOL
+Reykjavik       ICELAND           341,243         EOL
+Andorra la VellaANDORRA           77,265          EOL
+Monaco          MONACCO           39,242          EOL
+Vaduz           LIECHTENSTEIN     38,128          EOL
+San Marino      SAN MARINO        33,931          EOL
+vatican         HOLY SEE          825             EOL
