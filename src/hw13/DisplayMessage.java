@@ -2,6 +2,7 @@ package hw13;
 
 public class DisplayMessage implements Runnable {
    private String message;
+   private int count = 0;
    
    public DisplayMessage(String message) {
       this.message = message;
@@ -9,7 +10,17 @@ public class DisplayMessage implements Runnable {
    
    public void run() {
       while(true) {
-         System.out.println(message);
+
+         try {
+            Thread.sleep(300);
+            System.out.println(message + " " + count++);
+
+            if(count > 50){
+               break;
+            }
+
+         } catch (InterruptedException ignore) {}
+
       }
    }
 }

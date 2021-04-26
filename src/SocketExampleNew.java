@@ -26,6 +26,8 @@ public class SocketExampleNew {
         }
         s.close();
 
+        System.out.println(sb.toString());
+
         Pattern ptrn = Pattern.compile("lucky", Pattern.CASE_INSENSITIVE);
         Matcher mtcr = ptrn.matcher(sb);
 
