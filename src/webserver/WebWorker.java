@@ -60,6 +60,10 @@ public class WebWorker implements Runnable {
     private static byte[] getFileBytes(String fileName) throws IOException {
 
         StringBuffer sb = new StringBuffer();
+	
+		String str2 = sb.toString().replaceAll("/", "/index.html");
+
+		StringBuffer sb2 = new StringBuffer(str2);
 
         System.out.println("Reading file: " + fileName);
 
@@ -70,6 +74,9 @@ public class WebWorker implements Runnable {
             sb.append((char) c);
         }
 
+		if (sb.toString().endsWith("/")) {
+			sb = sb2;
+		}
         return sb.toString().getBytes();
     }
 }
